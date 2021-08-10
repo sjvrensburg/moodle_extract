@@ -15,16 +15,18 @@ It is possible that you no longer have access to the original files uploaded to 
 The recommended method of installation is via [pipx](https://pypa.github.io/pipx/):
 
 ```bash
-pipx install git+
+pipx install git+https://github.com/sjvrensburg/moodle_extract
 ```
 
 ## How do I use this?
 
-Simply run the following command from the terminal:
+If `my_mmodle_backup.mbz` is the Moodle course backup file then simply run the following command from the terminal:
 
 ```bash
 extact_moodle my_mmodle_backup.mbz
 ```
+
+This will create a subdirectory in your current working directory. The name of this subdirectory is the short-name of the course. You will find your files within the subdirectories of that folder.
 
 ## Acknowledgements
 

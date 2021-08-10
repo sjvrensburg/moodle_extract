@@ -69,10 +69,12 @@ def moodle_extract(fname: str):
             called files.xml
     
     DETAILS:
-    The function extacts the files to the current directory. It creates
-    subdirectories according to the "filearea" element associated with
-    file in the archive. This does not necessarily result in a logical
-    directory structure.
+    The function creates a directory to which it extacts the files.
+    The name of this directory is the shortname of the course. Files are
+    located within subdirectories. The names for the subdirectories are
+    determined from the "filearea" element associated with each file in the
+    archive. This does not necessarily result in a logical directory
+    structure.
     """
 
     console = Console()
